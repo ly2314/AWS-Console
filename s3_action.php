@@ -1,7 +1,5 @@
 <?php
-    require 'aws-lib/aws-autoloader.php';
-    use Aws\Common\Aws;
-    $aws = Aws::factory('config.php');
+    include 'aws_loader.php';
     $s3client = $aws->get('s3');
     $bucket_name = $_POST['bucket'];
     $object_key = $_POST['key'];
