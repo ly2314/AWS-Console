@@ -8,5 +8,6 @@
         <?php include 'ec2.php'; ?>
         <?php include 'rds.php'; ?>
         <?php include 'lb.php'; ?>
+        <?php include 'billing.php'; ?>
     </body>
 </html>
