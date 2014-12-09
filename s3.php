@@ -16,7 +16,7 @@
     foreach ($buckets['Buckets'] as $bucket)
     {
         echo "<tr>\n";
-        echo "<td><a href='".$dir."s3_files.php?name={$bucket['Name']}'>{$bucket['Name']}</a></td>\n";
+        echo "<td><a href='s3_files.php?name={$bucket['Name']}'>{$bucket['Name']}</a></td>\n";
         echo "<td>{$bucket['CreationDate']}</td>\n";
         echo "</tr>\n";
     }
