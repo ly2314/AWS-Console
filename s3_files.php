@@ -34,7 +34,7 @@
                         echo "<td>{$object['Size']}</td>\n";
                         
                         echo "<td>\n";
-                        echo "<form action='".$dir."s3_action.php' method='POST'>\n";
+                        echo "<form action='s3_action.php' method='POST'>\n";
                         echo "<input type='hidden' name='key' value={$object['Key']}>\n";
                         echo "<input type='hidden' name='bucket' value={$bucket_name}>\n";
                         echo "<input type='submit' name='doWork' value='Download'>\n";
