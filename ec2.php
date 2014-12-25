@@ -25,13 +25,19 @@
         {
             echo "<tr>\n";
             echo "<td><a href='ec2_stat.php?id={$instance['InstanceId']}'>{$instance['InstanceId']}</a></td>\n";
+            $contains_name = false;
             foreach ($instance['Tags'] as $tag)
             {
                 if ($tag['Key'] == 'Name')
                 {
+                    $contains_name = true;
                     echo "<td>{$tag['Value']}</td>\n";
                     break;
                 }
+            }
+            if ($contains_name === false)
+            {
+                echo "<td></td>\n";
             }
             echo "<td>{$instance['InstanceType']}</td>\n";
             $ec2image = $ec2client->describeImages(array(

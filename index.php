@@ -6,7 +6,7 @@
     <body>
         <?php include 's3.php'; ?>
         <?php include 'ec2.php'; ?>
-        <?php include 'rds.php'; ?>
+        <?php include 'as.php'; ?>
         <?php include 'lb.php'; ?>
         <?php include 'billing.php'; ?>
     </body>
